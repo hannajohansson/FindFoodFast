@@ -11,6 +11,6 @@ should be able to find a place with appropriate prices and lunch offers accordin
 user’s preferences.
 
 What functions do the users need from the service?
-● Display information about the lunch places nearby.
-● Display lunch places and the user’s position in a map.
-● Link to the lunch place’s web pages, if there are any.
+* Display information about the lunch places nearby.
+* Display lunch places and the user’s position in a map.
+* Link to the lunch place’s web pages, if there are any.
