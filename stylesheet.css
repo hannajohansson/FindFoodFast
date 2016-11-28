@@ -18,6 +18,8 @@ footer {
 
 article {
 	margin: 2%;
-	padding: 4%;
+	padding: 2%;
 	background-color: #e5e8ff;
+	display: inline-table;
+	width: 20%;
 }
