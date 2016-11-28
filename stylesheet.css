@@ -1,1 +1,23 @@
+header {
+	background-color: #D9DDFF;
+	text-align: center;
+	font-size: 200%;
+}
 
+body{
+	background-color: #fdfafa;
+}
+
+footer {
+	background-color: #D9DDFF;
+	text-align: center;
+	clear: both;
+	height: 10%;
+	padding-bottom: 20px;
+}
+
+article {
+	margin: 2%;
+	padding: 4%;
+	background-color: #e5e8ff;
+}
