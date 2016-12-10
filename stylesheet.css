@@ -1,1 +1,67 @@
+header {
+	width: 100%;
+	background-color: #5AA3AD;
+	text-align: center;
+	font-size: 200%;
+	padding: 2%;
+}
+
+body{
+	background-color: #fdfafa;
+}
+
+footer {
+	background-color: #5AA3AD;
+	text-align: center;
+	font-family: "Arial", sans-serif;
+	clear: both;
+	height: 10%;
+	padding-bottom: 20px;
+}
+
+article {
+	margin: 2%;
+	padding: 2%;
+	background-color: #8BBEC5;
+	display: inline-table;
+	width: 20%;
+	font-family: "Arial", sans-serif;
+}
+
+h1 {
+	display: inline;
+}
+
+h3 {
+	display: inline;
+}
+
+.header {
+	display: inline-table;
+}
+
+.restaurant {
+
+}
+
+.menu {
+	
+}
+
+.dishes {
+	display: inline-table;
+}
+
+.allergies {
+	display: inline-table;
+}
+
+.prices {
+	display: inline-table;
+}
+
+.links {
+	text-align: center;
+}
+
 
