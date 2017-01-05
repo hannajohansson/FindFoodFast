@@ -39,6 +39,29 @@
             <button id="btn-register" value="Register" onclick="register()">Register</button>
         </form>
 
+        <br><h1> Add today's menu for your restaurant(s). </h2><br><br>
+        <form>
+            Option 1 <br>
+            Dish: <input type="text" name="restaurantname" placeholder ="Type of food/dish" required><br><br>
+            
+            This dish contains: <br>
+            <input type="checkbox" name="special diet" value="Gluten" />Gluten <br />
+            <input type="checkbox" name="special diet" value="Lactose" />Lactose <br />
+            <input type="checkbox" name="special diet" value="Meat" />Meat (red meat and or chicken)<br />
+            <input type="checkbox" name="special diet" value="Fish" />Fish <br />
+            <input type="checkbox" name="special diet" value="Nuts" />Nuts <br />
+            This dish is: <br>
+            <input type="checkbox" name="special diet" value="Vegetarian" />Vegetarian <br />
+            <input type="checkbox" name="special diet" value="Vegetarian" />Vegan <br />
+            Other information about content in option 1: <input type="text" name="special diet" placeholder ="Text here" required><br><br>
+
+            Add this dish to the menu of the following of your restaurants: <br>
+            <input type="checkbox" name="restaurant" value="Restaurant1" />Restaurant 1 <br />
+            <input type="checkbox" name="restaurant" value="Restaurant2" />Restaurant 2 <br />
+            <button id="btn-addtomenu" value="Apply" onclick="addToMenu()">Add</button>
+        </form>
+        <br>
+
     </section>
 
     <!-- FOOTER -->
