@@ -25,20 +25,44 @@
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 
 	<!-- Scripts -->
-	<script type="text/javascript" src="myjava.js"></script>
+	<script type="text/javascript" src="functions.js"></script>
 
 	<meta name="HannaKatja" content="WebInt Project">
 </head>
 
-<body>
+<body onload="getCurrentWeekday">
 	<!-- HEADER -->
 	<header class="header">
-		<h3> Thursday &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h3>
+		<!-- <h3> Thursday &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h3> -->
+		<!-- Display current weekday -->
+		<h3 id="myWeekday"> </h3>
+			<script>
+				function getCurrentWeekday() {
+				    var d = new Date();
+				    var weekday = new Array(7);
+				    weekday[0] = "Sunday";
+				    weekday[1] = "Monday";
+				    weekday[2] = "Tuesday";
+				    weekday[3] = "Wednesday";
+				    weekday[4] = "Thursday";
+				    weekday[5] = "Friday";
+				    weekday[6] = "Saturday";
+
+				    var n = weekday[d.getDay()];
+				    document.getElementById("myWeekday").innerHTML = n;
+				}
+			</script>
+
 		<h1> 
 			<i class="fa fa-cutlery" aria-hidden="true"></i><!-- icon from Font Awesome --> 
 			FindFoodFast &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 		</h1>
-			<h3><time datetime="2016-11-28">28/11/2016</time></h3>
+		<h3 id="todaysDate"> </h3>
+			<script>
+				var dt = new Date();
+				document.getElementById("todaysDate").innerHTML = dt.toLocaleDateString();
+			</script>
+
 		<br><i class="fa fa-info-circle" aria-hidden="true"></i><!-- icon from Font Awesome -->
 	</header>
 
