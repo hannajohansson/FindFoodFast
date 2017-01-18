@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<!-- *************************************************************************************************************	
+<!-- *************************************************************************************************************
  	Authors: Hanna Johansson and Katja Mäenpää.
 	File created: 2016-11-23
 
 	This file: The main page of the application FindFoodFast. The application displays the actual date,
 	options of restaurants/lunch places nearby the user's location and information about current lunch offers,
-	such as price and allergy information. It is also possible to show the restaurants positions in a map 
+	such as price and allergy information. It is also possible to show the restaurants positions in a map
 	together with the users position.
 
 ************************************************************************************************************** -->
@@ -30,38 +30,16 @@
 	<meta name="HannaKatja" content="WebInt Project">
 </head>
 
-<body onload="getCurrentWeekday">
+<body onload="getCurrentWeekday()">
 	<!-- HEADER -->
 	<header class="header">
-		<h3> Thursday &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h3>
-		<!-- Display current weekday -->
-		<h3 id="myWeekday"> </h3>
-			<script>
-				function getCurrentWeekday() {
-				    var d = new Date();
-				    var weekday = new Array(7);
-				    weekday[0] = "Sunday";
-				    weekday[1] = "Monday";
-				    weekday[2] = "Tuesday";
-				    weekday[3] = "Wednesday";
-				    weekday[4] = "Thursday";
-				    weekday[5] = "Friday";
-				    weekday[6] = "Saturday";
-
-				    var n = weekday[d.getDay()];
-				    document.getElementById("myWeekday").innerHTML = n;
-				}
-			</script>
-
-		<h1> 
-			<i class="fa fa-cutlery" aria-hidden="true"></i><!-- icon from Font Awesome --> 
-			FindFoodFast &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+		<h3 id="myWeekday"> Thursday &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h3>
+		<h1>
+			<i class="fa fa-cutlery" aria-hidden="true"></i><!-- icon from Font Awesome -->
+			FindFoodFast &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 		</h1>
 		<h3 id="todaysDate"> </h3>
-			<script>
-				var dt = new Date();
-				document.getElementById("todaysDate").innerHTML = dt.toLocaleDateString();
-			</script>
+
 
 		<br><i class="fa fa-info-circle" aria-hidden="true"></i><!-- icon from Font Awesome -->
 	</header>
@@ -72,22 +50,22 @@
 			<article class="restaurant">
 				<h2> Casino </h2>
 				<div class="menu">
-					<ul class="dishes" style="list-style-type:none">
+					<ul class="dishes">
 						<li> Baguette </li>
 						<li> Pasta </li>
 					</ul>
-					<ul class="allergies" style="list-style-type:none">
+					<ul class="allergies">
 						<li> M, G </li>
 						<li> V </li>
 					</ul>
-					<ul class="prices" style="list-style-type:none">
+					<ul class="prices">
 						<li> 4,00 </li>
 						<li> 4,50 </li>
 					</ul>
-				</div> 
+				</div>
 				<div class="links">
 					<!-- icons from Font Awesome -->
-					<i class="fa fa-external-link" aria-hidden="true"></i> &nbsp; &nbsp; &nbsp;
+					<a href="https://www.supercasino.fr/"><i class="fa fa-external-link" aria-hidden="true"></i></a> &nbsp; &nbsp; &nbsp;
 					<i class="fa fa-map" aria-hidden="true"></i>
 				</div>
 			</article>
@@ -96,25 +74,25 @@
 			<article class="restaurant">
 				<h2> Sun of a Bun </h2>
 				<div class="menu">
-					<ul class="dishes" style="list-style-type:none">
+					<ul class="dishes">
 						<li> Hamburger </li>
 						<li> Kebab </li>
 						<li> Salad </li>
 					</ul>
-					<ul class="allergies" style="list-style-type:none">
+					<ul class="allergies">
 						<li> M, G </li>
 						<li> G </li>
 						<li> V </li>
 					</ul>
-					<ul class="prices" style="list-style-type:none">
+					<ul class="prices">
 						<li> 6,00 </li>
 						<li> 5,50 </li>
 						<li> 7,00 </li>
 					</ul>
-				</div> 
+				</div>
 				<div class="links">
 					<!-- icons from Font Awesome -->
-					<i class="fa fa-external-link" aria-hidden="true"></i> &nbsp; &nbsp; &nbsp;
+					<a href="https://www.supercasino.fr/"><i class="fa fa-external-link" aria-hidden="true"></i></a> &nbsp; &nbsp; &nbsp;
 					<i class="fa fa-map" aria-hidden="true"></i>
 				</div>
 			</article>
@@ -123,22 +101,22 @@
 			<article class="restaurant">
 				<h2> Subway </h2>
 				<div class="menu">
-					<ul class="dishes" style="list-style-type:none">
+					<ul class="dishes">
 						<li> Sub of the day </li>
 						<li> Salad </li>
 					</ul>
-					<ul class="allergies" style="list-style-type:none">
+					<ul class="allergies">
 						<li> M, G </li>
 						<li> V </li>
 					</ul>
-					<ul class="prices" style="list-style-type:none">
+					<ul class="prices">
 						<li> 6,30 </li>
 						<li> 6,70 </li>
 					</ul>
-				</div> 
+				</div>
 				<div class="links">
 					<!-- icons from Font Awesome -->
-					<i class="fa fa-external-link" aria-hidden="true"></i> &nbsp; &nbsp; &nbsp;
+					<a href="http://subwayfrance.fr/"><i class="fa fa-external-link" aria-hidden="true"></i></a> &nbsp; &nbsp; &nbsp;
 					<i class="fa fa-map" aria-hidden="true"></i>
 				</div>
 			</article>
@@ -147,22 +125,22 @@
 			<article class="restaurant">
 				<h2> Le Crous </h2>
 				<div class="menu">
-					<ul class="dishes" style="list-style-type:none">
+					<ul class="dishes">
 						<li> Dish of the day </li>
 						<li> Vegetarian dish of the day </li>
 					</ul>
-					<ul class="allergies" style="list-style-type:none">
+					<ul class="allergies">
 						<li> G </li>
 						<li> V </li>
 					</ul>
-					<ul class="prices" style="list-style-type:none">
+					<ul class="prices">
 						<li> 3,50 </li>
 						<li> 3,50 </li>
 					</ul>
-				</div> 
+				</div>
 				<div class="links">
 					<!-- icons from Font Awesome -->
-					<i class="fa fa-external-link" aria-hidden="true"></i> &nbsp; &nbsp; &nbsp;
+					<a href="https://www.supercasino.fr/"><i class="fa fa-external-link" aria-hidden="true"></i></a> &nbsp; &nbsp; &nbsp;
 					<i class="fa fa-map" aria-hidden="true"></i>
 				</div>
 			</article>
@@ -171,25 +149,25 @@
 			<article class="restaurant">
 				<h2> L'Artoise Snack </h2>
 				<div class="menu">
-					<ul class="dishes" style="list-style-type:none">
+					<ul class="dishes">
 						<li> Pizza </li>
 						<li> Pasta </li>
 						<li> Wrap </li>
 					</ul>
-					<ul class="allergies" style="list-style-type:none">
+					<ul class="allergies">
 						<li> G, L </li>
 						<li> G, V </li>
 						<li> G </li>
 					</ul>
-					<ul class="prices" style="list-style-type:none">
+					<ul class="prices">
 						<li> 4,70 </li>
 						<li> 4,00 </li>
 						<li> 5,10 </li>
 					</ul>
-				</div> 
+				</div>
 				<div class="links">
 					<!-- icons from Font Awesome -->
-					<i class="fa fa-external-link" aria-hidden="true"></i> &nbsp; &nbsp; &nbsp;
+					<a href="https://www.supercasino.fr/"><i class="fa fa-external-link" aria-hidden="true"></i></a> &nbsp; &nbsp; &nbsp;
 					<i class="fa fa-map" aria-hidden="true"></i>
 				</div>
 			</article>
@@ -198,37 +176,37 @@
 			<article class="restaurant">
 				<h2> L'Olivier du Golf </h2>
 				<div class="menu">
-					<ul class="dishes" style="list-style-type:none">
+					<ul class="dishes">
 						<li> Pizza </li>
 						<li> Baguette </li>
 					</ul>
-					<ul class="allergies" style="list-style-type:none">
+					<ul class="allergies">
 						<li> G </li>
 						<li> G </li>
 					</ul>
-					<ul class="prices" style="list-style-type:none">
+					<ul class="prices">
 						<li> 3,50 </li>
 						<li> 4,80 </li>
 					</ul>
-				</div> 
+				</div>
 				<div class="links">
 					<!-- icons from Font Awesome -->
-					<i class="fa fa-external-link" aria-hidden="true"></i> &nbsp; &nbsp; &nbsp;
+					<a href="https://www.supercasino.fr/"><i class="fa fa-external-link" aria-hidden="true"></i></a> &nbsp; &nbsp; &nbsp;
 					<i class="fa fa-map" aria-hidden="true"></i>
 				</div>
 			</article>
 
 	</section>
 
-	<aside> Allergies!! </aside>
+	<aside id="allergiesInfo"> Allergies!! </aside>
 
 	<!-- FOOTER -->
 	<footer>
 		<br>
-		<p id = "footertxt">Copyright &copy; Hanna Johansson, Katja Mäenpää 
+		<p id = "footertxt">Copyright &copy; Hanna Johansson, Katja Mäenpää
 			<time datetime="2016-11-28">2016</time></p>
 		<p>WebInt, EURECOM, Sophia-Antipolis, FRANCE</p>
-		<p>Contact: 
+		<p>Contact:
 			<a href="hanna.johansson@eurecom.fr"> hanna.johansson@eurecom.fr</a>
 			<a href="katja.maenpaa@eurecom.fr"> katja.maenpaa@eurecom.fr</a>
 		</p>

@@ -1,4 +1,4 @@
-/*******************************************************************************************************	
+/*******************************************************************************************************
  	Authors: Hanna Johansson and Katja Mäenpää.
 	File created: 2017-01-18
 
@@ -14,11 +14,16 @@
 	- lookup
 
 /*******************************************************************************************************/
+window.onload = function() {getTodaysDate()};
+
 
 //get current date
 function getTodaysDate(){
+	console.log("came to getTodaysDate function")
 	var dt = new Date();
-	document.getElementById("todaysDate").innerHTML = dt.toLocaleDateString();
+	var todayDate = dt.toLocaleDateString();
+	document.getElementById("todaysDate").innerHTML = todayDate;
+	console.log ("todays date:", todayDate);
 }
 
 //get current weekday
@@ -46,7 +51,7 @@ var map = document.getElementById("mapholder");
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(success, error);
-    } 
+    }
     else {
         alert = "Your browser doesn't support geolocation, sorry.";
         console.log("Browser error.")
@@ -66,9 +71,9 @@ function success(position){
 		mapTypeControl: false, navigationControlOptions:
 		{style: google.maps.NavigationControlStyle.SMALL},
 		mapyTypeId: google.maps.MapTypeId.ROADMAP};
-	
+
 	map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
-		
+
 	var marker = new google.maps.Marker({
 		position: latlng,
 		map: map,
@@ -89,14 +94,14 @@ function lookup() {
 	function(results, status) {
 		if (status == google.maps.GeocoderStatus.OK) {
 			map. setCenter(results[0].geometry.location);
-			var marker = new google.maps.Marker( { 
+			var marker = new google.maps.Marker( {
 				map: map, position: results[0].geometry.location});
 		}
 		else  {
 			alert("Geocode was not successful for the following reason: " + status);
 		}
-	});	
+	});
 }
-	
+
 
 
