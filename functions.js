@@ -6,6 +6,7 @@
 
 	This file includes the functions:
 	- getDate
+	- getCurrentWeekday
 	- getLocation
 	- geoLocation
 	- success
