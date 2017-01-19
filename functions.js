@@ -16,7 +16,6 @@
 /*******************************************************************************************************/
 window.onload = function() {getTodaysDate()};
 
-
 //get current date
 function getTodaysDate(){
 	console.log("came to getTodaysDate function")
