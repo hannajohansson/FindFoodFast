@@ -17,7 +17,7 @@ body{
 }
 
 footer {
-	background-color: #5AA3AD;
+	background-color: #FF7400; /*#D40039; #FF0044;*/
 	text-align: center;
 	font-family: "Arial", sans-serif;
 	clear: both;
@@ -27,10 +27,11 @@ footer {
 
 article {
 	margin: 2%;
-	padding: 2%;
+	padding: 1%;
 	background-color: #8BBEC5;
+	border-radius: 50px 15px;
 	display: inline-table;
-	width: 15em;
+	width: 18em;
 	height: 16em;
 	font-family: "Arial", sans-serif;
 }
@@ -69,12 +70,30 @@ i:hover {
     transition: all 0.2s ease-out;
 }
 
-#left{
+#left {
 	background-color: #ededed;
 	padding: 2%;
 	float:left;
 	width:10%;
 } 
+
+#navbar {
+	text-align: right;
+	font-size: 150%;
+	background-color: #FF7400; /**#8BBEC5;*/
+	padding-right: 2%;
+}
+
+#register {
+	color: black;
+	font-size: 60%;
+	font-family: "Arial", sans-serif;
+	text-decoration: none;
+}
+
+#register:hover {
+	color: white;
+}
 
 /***************
 	classes
@@ -121,6 +140,7 @@ i:hover {
 .fa-external-link {
 	color: black;
 }
+
 
 
 
