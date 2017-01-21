@@ -34,18 +34,23 @@
     <div id="left"></div>
 
     <!-- BODY -->
-    <section class="registrationpage">
+    <section class="registrationpage"> <br><br>
+        <!-- Register a new restaurant on the application --> 
         <h2> To show your restaurant to our users you need to register. </h2>
         <form>
+            <fieldset id="form">
+                <legend> Start here </legend>
             Restaurant name: <input type="text" name="restaurantname" placeholder ="Restaurant name" required><br><br>
             Homepage: <input type="url" name="homepage" placeholder ="Homepage" required><br><br>
+            </fieldset> <br>
+
             <fieldset id="form">
                 <legend> Address </legend>
                 <p> Street: <input type="text" name="street" placeholder ="Street" required/></p>
                 <p> Zip code: <input type="text" name="zipcode" placeholder ="Zipcode" required/></p>
                 <p> City: <input type="text" name="city" placeholder ="City" required/></p>
                 <p> Country: <input type="text" name="country" placeholder ="Country" required/></p>
-            </fieldset> <br><br>
+            </fieldset> <br>
 
             <fieldset>
                 <legend>Contact information</legend>
@@ -54,15 +59,23 @@
                 E-mail: <input type="text" name="email" placeholder ="E-mail" required><br><br>
             </fieldset> <br>
 
-            Add multiple restaurants:
-            <br><button id="add-restaurant" value="Add">+</button><br><br>
-            <button id="btn-register" value="Register" onclick="register()">Register</button>
-        </form>
+            <fieldset>
+                <legend>Add more restaurants?</legend>
+                <br><button id="add-restaurant" value="Add">+</button>
+            </fieldset> <br>
 
-        <br><h1> Add today's menu for your restaurant(s). </h2><br><br>
+            <fieldset id="noborder"> 
+                <button id="btn_register" value="Register" onclick="register()"><span>Register </span></button>
+            </fieldset>
+        </form> <br> <br>
+
+        <!-- Add another dish for the restaurant -->
+        <br><h2> Add today's menu for your restaurant(s). </h2>
         <form>
-            Option 1 <br>
-            Dish: <input type="text" name="restaurantname" placeholder ="Type of food/dish" required><br><br>
+            <fieldset>
+                <legend> Add your option here </legend>
+            Name of dish: <input type="text" name="restaurantname" placeholder ="Type of food/dish" required>
+            </fieldset><br>
             
             <fieldset>
                 <legend> List of contents in the dish </legend>
@@ -70,17 +83,22 @@
                 <input type="checkbox" name="special diet" value="Lactose" />Lactose <br />
                 <input type="checkbox" name="special diet" value="Meat" />Meat (red meat and or chicken)<br />
                 <input type="checkbox" name="special diet" value="Fish" />Fish <br />
-                <input type="checkbox" name="special diet" value="Nuts" />Nuts <br />
+                <input type="checkbox" name="special diet" value="Nuts" />Nuts <br /> <br>
                 This dish is: <br>
                 <input type="checkbox" name="special diet" value="Vegetarian" />Vegetarian <br />
-                <input type="checkbox" name="special diet" value="Vegetarian" />Vegan <br />
+                <input type="checkbox" name="special diet" value="Vegetarian" />Vegan <br /><br>
                 Other information about content in option 1: <input type="text" name="special diet" placeholder ="Text here" required><br><br>
-            </fieldset> <br><br>
+            </fieldset> <br>
 
-            Add this dish to the menu of the following of your restaurants: <br>
-            <input type="checkbox" name="restaurant" value="Restaurant1" />Restaurant 1 <br />
-            <input type="checkbox" name="restaurant" value="Restaurant2" />Restaurant 2 <br />
-            <button id="btn-addtomenu" value="Apply" onclick="addToMenu()">Add</button>
+            <fieldset>
+                <legend> Add this dish to the menu of the following of your restaurants </legend>
+                <input type="checkbox" name="restaurant" value="Restaurant1" />Restaurant 1 <br />
+                <input type="checkbox" name="restaurant" value="Restaurant2" />Restaurant 2 <br />
+            </fieldset> <br>
+
+            <fieldset id="noborder">  
+                <button id="btn_add_dish" value="Register" onclick="addDish()"><span>Add dish </span></button><br><br>
+            </fieldset>
         </form>
         <br>
 
@@ -92,10 +110,10 @@
         <p id = "footertxt">Copyright &copy; Hanna Johansson, Katja Mäenpää
             <time datetime="2016-11-28">2016</time></p>
         <p>WebInt, EURECOM, Sophia-Antipolis, FRANCE</p>
-        <p>Contact:
-            <a href="hanna.johansson@eurecom.fr"> hanna.johansson@eurecom.fr</a>
-            <a href="katja.maenpaa@eurecom.fr"> katja.maenpaa@eurecom.fr</a>
-        </p>
+        <address>
+            <a href="hanna.johansson@eurecom.fr" id="contact"> hanna.johansson@eurecom.fr</a> &nbsp; &nbsp;
+            <a href="katja.maenpaa@eurecom.fr" id="contact"> katja.maenpaa@eurecom.fr</a>
+        </address>
         <h4><a href="https://github.com/hannajohansson/FindFoodFast"><i class="fa fa-github fa-2x"></i></a></h4>
     </footer>
 
