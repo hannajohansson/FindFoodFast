@@ -9,7 +9,7 @@
     <meta name="HannaKatja" content="WebInt Project">
 </head>
 
-<body onload="getCurrentWeekday()">
+<body onload="getTodaysDate()">
 
     <!-- HEADER -->
     <header class="header">
@@ -27,7 +27,7 @@
         <a href="index.html" id="go_back">
             <i class="fa fa-arrow-left" aria-hidden="true"></i>
             GO BACK
-        </a> 
+        </a>
         <i class="fa fa-info-circle" aria-hidden="true"></i><!-- icon from Font Awesome -->
     </div>
 
@@ -35,7 +35,7 @@
 
     <!-- BODY -->
     <section class="registrationpage"> <br><br>
-        <!-- Register a new restaurant on the application --> 
+        <!-- Register a new restaurant on the application -->
         <h2> To show your restaurant to our users you need to register. </h2>
         <form>
             <fieldset id="form">
@@ -64,7 +64,7 @@
                 <br><button id="add-restaurant" value="Add">+</button>
             </fieldset> <br>
 
-            <fieldset id="noborder"> 
+            <fieldset id="noborder">
                 <button id="btn_register" value="Register" onclick="register()"><span>Register </span></button>
             </fieldset>
         </form> <br> <br>
@@ -76,7 +76,7 @@
                 <legend> Add your option here </legend>
             Name of dish: <input type="text" name="restaurantname" placeholder ="Type of food/dish" required>
             </fieldset><br>
-            
+
             <fieldset>
                 <legend> List of contents in the dish </legend>
                 <input type="checkbox" name="special diet" value="Gluten" />Gluten <br />
@@ -96,7 +96,7 @@
                 <input type="checkbox" name="restaurant" value="Restaurant2" />Restaurant 2 <br />
             </fieldset> <br>
 
-            <fieldset id="noborder">  
+            <fieldset id="noborder">
                 <button id="btn_add_dish" value="Register" onclick="addDish()"><span>Add dish </span></button><br><br>
             </fieldset>
         </form>
