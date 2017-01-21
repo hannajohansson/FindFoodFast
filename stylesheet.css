@@ -3,28 +3,6 @@
 	# for id
 	. for class
 ******************************************/
-
-header {
-	width: 96%;
-	background-color: #5AA3AD;
-	text-align: center;
-	font-size: 200%;
-	padding: 2%;
-}
-
-body{
-	background-color: #ededed;
-}
-
-footer {
-	background-color: #FF7400; /*#D40039; #FF0044;*/
-	text-align: center;
-	font-family: "Arial", sans-serif;
-	clear: both;
-	height: 10%;
-	padding-bottom: 20px;
-}
-
 article {
 	margin: 2%;
 	padding: 1%;
@@ -36,6 +14,32 @@ article {
 	font-family: "Arial", sans-serif;
 }
 
+body {
+	background-color: #ededed;
+}
+
+fieldset {
+	width: 45%;
+	float: center;
+}
+
+footer {
+	background-color: #FF7400; /*#D40039; #FF0044;*/
+	text-align: center;
+	font-family: "Arial", sans-serif;
+	clear: both;
+	height: 10%;
+	padding-bottom: 20px;
+}
+
+header {
+	width: 96%;
+	background-color: #5AA3AD;
+	text-align: center;
+	font-size: 200%;
+	padding: 2%;
+}
+
 h1 {
 	display: inline;
 }
@@ -44,12 +48,12 @@ h3 {
 	display: inline;
 }
 
-ul {
-	list-style-type:none;
-}
-
 i:hover {
 	color: white;
+}
+
+ul {
+	list-style-type:none;
 }
 
 /***************
@@ -70,19 +74,28 @@ i:hover {
     transition: all 0.2s ease-out;
 }
 
+#FFF_icon:hover {
+	color: black;
+}
+
+#go_back {
+	color: black;
+	float: left;
+	font-size: 60%;
+	font-family: "Arial", sans-serif;
+	text-decoration: none;
+}
+
+#go_back:hover {
+	color: white;
+}
+
 #left {
 	background-color: #ededed;
 	padding: 2%;
 	float:left;
 	width:10%;
 } 
-
-#navbar {
-	text-align: right;
-	font-size: 150%;
-	background-color: #FF7400; /**#8BBEC5;*/
-	padding-right: 2%;
-}
 
 #register {
 	color: black;
@@ -98,12 +111,28 @@ i:hover {
 /***************
 	classes
 ***************/
+
+.allergies {
+	display: inline-table;
+	list-style-type: none;
+}
+
+.dishes {
+	display: inline-table;
+	list-style-type: none;
+}
+
+.fa-external-link {
+	color: black;
+}
+
 .header {
 	display: inline-table;
 }
 
-.restaurant {
-
+.links {
+	text-align: center;
+	list-style-type: none;
 }
 
 .main {
@@ -117,14 +146,11 @@ i:hover {
 	float: left;
 }
 
-.dishes {
-	display: inline-table;
-	list-style-type: none;
-}
-
-.allergies {
-	display: inline-table;
-	list-style-type: none;
+.navbar {
+	text-align: right;
+	font-size: 150%;
+	background-color: #FF7400; /**#8BBEC5;*/
+	padding-right: 2%;
 }
 
 .prices {
@@ -132,13 +158,15 @@ i:hover {
 	list-style-type: none;
 }
 
-.links {
-	text-align: center;
-	list-style-type: none;
+.restaurant {
+
 }
 
-.fa-external-link {
-	color: black;
+.registrationpage {
+	width: 72%;
+	float: left;
+	background-color: white;
+	font-family: "Arial", sans-serif;
 }
 
 
