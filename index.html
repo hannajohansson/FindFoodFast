@@ -30,11 +30,11 @@
 	<meta name="HannaKatja" content="WebInt Project">
 </head>
 
-<body onload="getCurrentWeekday()">
+<body onload="getTodaysDate(), checkGeolocation()">
 
 	<!-- HEADER -->
 	<header class="header">
-		<h3 id="myWeekday"> Thursday &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h3>
+		<h3 id="myWeekday">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h3>
 		<h1><a href = "index.html" id="FFF_homepage">
 			<i class="fa fa-cutlery" aria-hidden="true"></i><!-- icon from Font Awesome -->
 			FindFoodFast </a>
@@ -45,7 +45,7 @@
 
 	<!-- Navigation bar: possibility to register + read information -->
 	<div id="navbar">
-		<a href="registration.html" id="register">REGISTER</a> 
+		<a href="registration.html" id="register">REGISTER</a>
 		&nbsp; &nbsp;
 		<i class="fa fa-info-circle" aria-hidden="true"></i><!-- icon from Font Awesome -->
 	</div>
@@ -74,7 +74,7 @@
 				<div class="links">
 					<!-- icons from Font Awesome -->
 					<a href="https://www.supercasino.fr/"><i class="fa fa-external-link" aria-hidden="true"></i></a> &nbsp; &nbsp; &nbsp;
-					<i class="fa fa-map" aria-hidden="true"></i>
+					<a href="map.html"> <i class="fa fa-map" aria-hidden="true"></i></a>
 				</div>
 			</article>
 
@@ -208,19 +208,19 @@
 
 	<div id="left">
 		<!-- Information about the allergies -->
-		<aside id="allergiesInfo"> 
+		<aside id="allergiesInfo">
 			<h3>
 				Special diets? <br>
 				Look over here! <br>
 				<i class="fa fa-angle-double-down" id="allergy_arrow" aria-hidden="true"></i>
 			</h3>
-				<ul id='allergy_list'> 
+				<ul id='allergy_list'>
 					<li> G = Gluten </li>
 					<li> L = Lactose </li>
 					<li> V = Vegetarian </li>
 					<li> E = Egg </li>
 				</ul>
-					
+
 		</aside>
 	</div>
 
