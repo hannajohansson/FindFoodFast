@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FindFoodFast</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> <!-- import icons -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script type="text/javascript" src="functions.js"></script>
+    <meta name="HannaKatja" content="WebInt Project">
+</head>
+
+<body onload="getCurrentWeekday()">
+
+    <!-- HEADER -->
+    <header class="header">
+        <h3 id="myWeekday"> Thursday &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h3>
+        <h1><a href = "index.html" id="FFF_homepage">
+            <i class="fa fa-cutlery" aria-hidden="true"></i><!-- icon from Font Awesome -->
+            FindFoodFast </a>
+        </h1>
+        <h3 id="todaysDate"> </h3>
+        <br>
+    </header>
+
+    <!-- Navigation bar: possibility to register + read information -->
+    <div id="navbar">
+        <a href="registration.html" id="register">REGISTER</a> 
+        &nbsp; &nbsp;
+        <i class="fa fa-info-circle" aria-hidden="true"></i><!-- icon from Font Awesome -->
+    </div>
+
+    <div id="left"></div>
+
+    <!-- BODY -->
+    <section>
+        <h2> To show your restaurant to our users you need to register. </h2>
+        <form>
+            Restaurant name: <input type="text" name="restaurantname" placeholder ="Restaurant name" required><br><br>
+            Adress: <br>
+                Street: <input type="text" name="street" placeholder ="Street" required><br><br>
+                Zip code: <input type="text" name="zipcode" placeholder ="Zipcode" required><br><br>
+                City: <input type="text" name="city" placeholder ="City" required><br><br>
+                Country: <input type="text" name="country" placeholder ="Country" required><br><br>
+            Homepage: <input type="url" name="homepage" placeholder ="Homepage" required><br><br><br>
+
+            Contact person: <input type="text" name="contactname" placeholder ="Name" required><br><br>
+            Phone number: <input type="text" name="phonenumber" placeholder ="Eg. +33708944708" required><br><br>
+            E-mail: <input type="text" name="email" placeholder ="E-mail" required><br><br>
+            Add multiple restaurants:
+            <br><button id="add-restaurant" value="Add">+</button><br><br>
+            <button id="btn-register" value="Register" onclick="register()">Register</button>
+        </form>
+
+        <br><h1> Add today's menu for your restaurant(s). </h2><br><br>
+        <form>
+            Option 1 <br>
+            Dish: <input type="text" name="restaurantname" placeholder ="Type of food/dish" required><br><br>
+            
+            This dish contains: <br>
+            <input type="checkbox" name="special diet" value="Gluten" />Gluten <br />
+            <input type="checkbox" name="special diet" value="Lactose" />Lactose <br />
+            <input type="checkbox" name="special diet" value="Meat" />Meat (red meat and or chicken)<br />
+            <input type="checkbox" name="special diet" value="Fish" />Fish <br />
+            <input type="checkbox" name="special diet" value="Nuts" />Nuts <br />
+            This dish is: <br>
+            <input type="checkbox" name="special diet" value="Vegetarian" />Vegetarian <br />
+            <input type="checkbox" name="special diet" value="Vegetarian" />Vegan <br />
+            Other information about content in option 1: <input type="text" name="special diet" placeholder ="Text here" required><br><br>
+
+            Add this dish to the menu of the following of your restaurants: <br>
+            <input type="checkbox" name="restaurant" value="Restaurant1" />Restaurant 1 <br />
+            <input type="checkbox" name="restaurant" value="Restaurant2" />Restaurant 2 <br />
+            <button id="btn-addtomenu" value="Apply" onclick="addToMenu()">Add</button>
+        </form>
+        <br>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <br>
+        <p id = "footertxt">Copyright &copy; Hanna Johansson, Katja Mäenpää
+            <time datetime="2016-11-28">2016</time></p>
+        <p>WebInt, EURECOM, Sophia-Antipolis, FRANCE</p>
+        <p>Contact:
+            <a href="hanna.johansson@eurecom.fr"> hanna.johansson@eurecom.fr</a>
+            <a href="katja.maenpaa@eurecom.fr"> katja.maenpaa@eurecom.fr</a>
+        </p>
+        <h4><a href="https://github.com/hannajohansson/FindFoodFast"><i class="fa fa-github fa-2x"></i></a></h4>
+    </footer>
+
+</body>
+
+</html>
