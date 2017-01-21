@@ -53,6 +53,10 @@ h3 {
 	display: inline;
 }
 
+i {
+	color: black;
+}
+
 i:hover {
 	color: white;
 }
@@ -157,6 +161,10 @@ ul {
 	color: black;
 }
 
+#fontcolor {
+	color: #FF7400;
+}
+
 #go_back {
 	color: black;
 	float: left;
@@ -174,6 +182,27 @@ ul {
 	padding: 2%;
 	float:left;
 	width:10%;
+	
+}
+
+#look_here {
+	font-style: italic;
+	font-size: 140%;
+}
+
+#map-div {
+	width: 100%;
+	height: 100%;
+	background-color: #ededed;
+	text-align: center;
+}
+
+#map {
+	width: 600px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+
 }
 
 #noborder {
@@ -254,20 +283,7 @@ ul {
 	font-family: "Arial", sans-serif;
 }
 
-#map-div {
-	width: 100%;
-	height: 100%;
-	background-color: #ededed;
-	text-align: center;
-}
 
-#map{
-	width: 600px;
-	height: 400px;
-	margin-left: auto;
-	margin-right: auto;
-
-}
 
 
 
