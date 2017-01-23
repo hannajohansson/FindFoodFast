@@ -281,6 +281,8 @@ ul {
 /* CSS for the information dropdown */
 .dd_info {
     position: relative;
+    width: 20px;
+    float: right;
 }
 
 .info-content {
