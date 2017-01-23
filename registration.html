@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<!-- *************************************************************************************************************
+    Authors: Hanna Johansson and Katja Mäenpää.
+    File created: 2016-11-23
+
+    This file: The registration page of the application FindFoodFast. This page is for restaurants for registration of the restaurant and for listing the days menus and specials.
+
+************************************************************************************************************** -->
 <html>
 <head>
     <meta charset="UTF-8">
@@ -19,7 +26,7 @@
             <i class="fa fa-cutlery" aria-hidden="true"></i><!-- icon from Font Awesome -->
             FindFoodFast &nbsp; &nbsp; </a>
         </h1>
-        <h3 id="todaysDate"> </h3>
+        <h3 id="todaysDate"> 1/1/17 </h3>
         <br>
     </header>
 
@@ -49,13 +56,13 @@
         <!-- Register a new restaurant on the application -->
         <h2> To show your restaurant to our users you need to register. </h2>
         <form>
-            <fieldset id="form">
+            <fieldset class="form">
                 <legend> Start here </legend>
             Restaurant name: <input type="text" name="restaurantname" placeholder ="Restaurant name" required><br><br>
             Homepage: <input type="url" name="homepage" placeholder ="Homepage" required><br><br>
             </fieldset> <br>
 
-            <fieldset id="form">
+            <fieldset class="form">
                 <legend> Address </legend>
                 <p> Street: <input type="text" name="street" placeholder ="Street" required/></p>
                 <p> Zip code: <input type="text" name="zipcode" placeholder ="Zipcode" required/></p>
@@ -75,7 +82,7 @@
                 <br><button id="add-restaurant" value="Add">+</button>
             </fieldset> <br>
 
-            <fieldset id="noborder">
+            <fieldset class="noborder">
                 <button id="btn_register" value="Register" onclick="register()"><span>Register </span></button>
             </fieldset>
         </form> <br> <br>
@@ -107,7 +114,7 @@
                 <input type="checkbox" name="restaurant" value="Restaurant2" />Restaurant 2 <br />
             </fieldset> <br>
 
-            <fieldset id="noborder">
+            <fieldset class="noborder">
                 <button id="btn_add_dish" value="Register" onclick="addDish()"><span>Add dish </span></button><br><br>
             </fieldset>
         </form>
@@ -122,10 +129,10 @@
             <time datetime="2016-11-28">2016</time></p>
         <p>WebInt, EURECOM, Sophia-Antipolis, FRANCE</p>
         <address>
-            <a href="hanna.johansson@eurecom.fr" id="contact"> hanna.johansson@eurecom.fr</a> &nbsp; &nbsp;
-            <a href="katja.maenpaa@eurecom.fr" id="contact"> katja.maenpaa@eurecom.fr</a>
+            <a href="hanna.johansson@eurecom.fr" class="contact"> hanna.johansson@eurecom.fr</a> &nbsp; &nbsp;
+            <a href="katja.maenpaa@eurecom.fr" class="contact"> katja.maenpaa@eurecom.fr</a>
         </address>
-        <h4><a href="https://github.com/hannajohansson/FindFoodFast"><i class="fa fa-github fa-2x"></i></a></h4>
+        <p><a href="https://github.com/hannajohansson/FindFoodFast"><i class="fa fa-github fa-2x"></i></a></p>
     </footer>
 
 </body>

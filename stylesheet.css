@@ -169,10 +169,7 @@ ul {
 }
 /* END of 'add dish' button */
 
-#contact {
-	text-decoration: none;
-	color: black;
-}
+
 
 #FFF_homepage {
     color: black;
@@ -204,11 +201,8 @@ ul {
 	color: white;
 }
 
-#left {
-	background-color: transparent;
-	padding: 2%;
-	float:left;
-	width:10%;
+#info-button-img {
+    cursor: pointer;
 }
 
 #look_here {
@@ -230,10 +224,6 @@ ul {
 	margin-right: auto;*/
 	margin: 5%;
 	position: center;
-}
-
-#noborder {
-	border: none;
 }
 
 #register {
@@ -258,6 +248,11 @@ ul {
 /***************
 	classes
 ***************/
+
+.contact {
+    text-decoration: none;
+    color: black;
+}
 
 /* CSS for the allergy dropdown */
 .dropdown {
@@ -316,12 +311,19 @@ ul {
 	display: inline-table;
 }
 
+.left {
+    background-color: transparent;
+    padding: 2%;
+    float:left;
+    width:10%;
+}
+
 .links {
 	text-align: center;
 	list-style-type: none;
 	color: black;
 	text-decoration: none;
-	position: absolute; 
+	position: absolute;
 	bottom: 0;
 	padding-bottom: 8%;
 	padding-left: 38%;
@@ -345,6 +347,10 @@ ul {
 	font-size: 150%;
 	background-color: #FF7400; /**#8BBEC5;*/
 	padding-right: 2%;
+}
+
+.noborder {
+    border: none;
 }
 
 .prices {
