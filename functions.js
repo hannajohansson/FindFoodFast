@@ -5,13 +5,11 @@
 	The file contains functions which handle the functionality of FindFoodFast startpage.
 
 	This file includes the functions:
-	- getDate
-	- getCurrentWeekday
-	- getLocation
-	- geoLocation
+	- getTodaysDate
+	- checkGeolocation
 	- success
 	- error
-	- lookup
+	-showMap
 
 /*******************************************************************************************************/
 
@@ -38,11 +36,6 @@ function getTodaysDate(){
 	console.log("todays weekday: ", n);
 }
 
-
-
-//get current position
-// MAP: Geolocation
-// from lecture slides
 
 
 function checkGeolocation() {
