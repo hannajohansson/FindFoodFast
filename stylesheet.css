@@ -205,6 +205,10 @@ ul {
     cursor: pointer;
 }
 
+#links_hover:hover {
+	color: #5AA3AD;
+}
+
 #look_here {
 	font-style: italic;
 	font-size: 140%;
