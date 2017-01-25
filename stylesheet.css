@@ -230,6 +230,12 @@ ul {
 	position: center;
 }
 
+#opening_hours {
+	font-family: "Courier New", monospace;
+	color: white;
+	font-size: 80%;
+}
+
 #register {
 	color: black;
 	font-size: 60%;
