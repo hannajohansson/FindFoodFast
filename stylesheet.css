@@ -205,10 +205,6 @@ ul {
     cursor: pointer;
 }
 
-#links_hover:hover {
-	color: #5AA3AD;
-}
-
 #look_here {
 	font-style: italic;
 	font-size: 140%;
@@ -228,12 +224,6 @@ ul {
 	margin-right: auto;*/
 	margin: 5%;
 	position: center;
-}
-
-#opening_hours {
-	font-family: "Courier New", monospace;
-	color: white;
-	font-size: 80%;
 }
 
 #register {
@@ -341,6 +331,10 @@ ul {
 	padding-left: 38%;
 }
 
+.links_hover:hover {
+	color: #5AA3AD;
+}
+
 .main {
 	width: 72%;
 	text-align: center;
@@ -363,6 +357,12 @@ ul {
 
 .noborder {
     border: none;
+}
+
+.opening_hours {
+	font-family: "Courier New", monospace;
+	color: white;
+	font-size: 80%;
 }
 
 .prices {
